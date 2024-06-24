@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Mail from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import BriefCase from "../components/icons/BriefCase.astro";
+import Footer from "../components/Footer.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout 
+ title="Eddie's Portfolio Software Developer."
+ description="Hire Eddie Jimenez a software developer from North Carolina. Eddie has experience in Java, JavaScript, Python, and C++. Eddie is currently looking for a job in software development."
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-22">
+      <img
+        class="rounded-full size-12 mb-5"
+        src="https://images.squarespace-cdn.com/content/v1/5446f93de4b0a3452dfaf5b0/1626904421257-T6I5V5IQ4GI2SJ8EU82M/Above+Avalon+Neil+Cybart"
+        alt="logo"
+      />
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10">
+        Hey I'm Eddie<a
+          href="https://www.linkedin.com/in/eddiejimenezpro/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Open To Work</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span>+3 years of experience </span>
+        <span class="text-blue-300/90"
+          >i'm from north carolina and i have experience in java, javascript,
+          python, and c++.
+        </span>
+        <span class="text-red-100/90">I'm currently looking for a job</span>
+        <span class="opacity-90">in software development.</span>
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/eddiejimenezpro/">
+          <LinkedIn class="size-4 md:size-6"/>
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/EddieAJimenez">
+          <GitHub class="size-4 md:size-6"/>
+          GitHub
+        </SocialPill>
+        <SocialPill href="https://github.com/EddieAJimenez">
+          <Mail class="size-4 md:size-6"/>
+          Andresdiazjun06@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experience">
+      <h2 class="text-3xl font-semibold mb-5 flex gap-x-2 items-center">
+        <BriefCase class="size-7"/>
+        Experience
+    </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer id="projects">
+      <h2 class="text-3xl font-semibold mb-5 flex gap-x-2 items-center">
+        <CodeIcon class="size-7"/>
+        Projects
+    </h2>
+      <Projects />
+    </SectionContainer>
+    <Footer />
+  </main>
+</Layout>
